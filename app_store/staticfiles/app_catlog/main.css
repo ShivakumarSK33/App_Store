@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* General Body Styling */
+body {
+    background-color: yellowgreen;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+}
+
+nav a.active, nav a:hover {
+    background-color: #555;
+}
+
+/* Main Content Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: white;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

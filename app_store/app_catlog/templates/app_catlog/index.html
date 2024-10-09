@@ -1,0 +1,27 @@
+<!-- app_catlog/templates/app_catlog/index.html -->
+{% extends "app_catlog/base.html" %}
+
+{% block title %}
+    All Apps
+{% endblock %}
+
+{% block content %}
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{% url 'index' %}" class="{% if request.resolver_match.url_name == 'index' %}active{% endif %}">Home</a>
+        <a href="#">Apps</a>
+        <a href="#">Games</a>
+        <a href="#">E-Books</a>
+        <a href="#">About</a>
+    </nav>
+
+    <!-- App List -->
+    <ul>
+        {% for app in apps %}
+        <li>
+            <a href = "{{app.get_absolute_url}}">{{app.name}}</a> (rating : {{app.rating}})
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
